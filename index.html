@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Forever ❤️</title>
+
+<link rel="icon" href="data:image/svg+xml,
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
+<text y='0.9em' font-size='90'>💑</text>
+</svg>">
+
+<!-- ✨ Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    background: linear-gradient(-45deg,
+        #89f7fe,
+        #66a6ff,
+        #91eae4,
+        #74ebd5,
+        #a155ff,
+        #b791ff
+    );
+    background-size:400% 400%;
+    animation:bgFlow 16s ease infinite;
+    font-family:'Poppins', sans-serif;
+    color:#ffffff;
+    text-align:center;
+    overflow-x:hidden;
+}
+
+@keyframes bgFlow{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+/* ❤️ Floating hearts */
+.heart{
+    position:fixed;
+    bottom:-20px;
+    animation:float 6s linear infinite;
+}
+@keyframes float{
+    from{transform:translateY(0);opacity:1;}
+    to{transform:translateY(-120vh);opacity:0;}
+}
+
+/* 💖 Header */
+header{
+    padding:80px 20px 50px;
+}
+header h1{
+    font-family:'Playfair Display', serif;
+    font-size:56px;
+    color:#ffffff;
+    text-shadow:
+        0 4px 12px rgba(0,0,0,0.35),
+        0 0 15px rgba(255,255,255,0.35);
+    animation:heartbeat 1.5s infinite;
+}
+header p{
+    margin-top:18px;
+    font-size:22px;
+    font-weight:400;
+    color:#f9fcff;
+    text-shadow:0 3px 10px rgba(0,0,0,0.35);
+    line-height:1.6;
+}
+@keyframes heartbeat{
+    0%{transform:scale(1);}
+    50%{transform:scale(1.12);}
+    100%{transform:scale(1);}
+}
+
+/* 🖼 PERFECT IMAGE ALIGNMENT */
+.couple{
+    max-width:1000px;
+    margin:60px auto;
+    column-count:3;
+    column-gap:20px;
+    padding:0 20px;
+}
+
+.couple img{
+    width:100%;
+    margin-bottom:20px;
+    border-radius:26px;
+    background:rgba(255,255,255,0.25);
+    padding:10px;
+    box-shadow:0 0 25px rgba(0,120,255,0.6);
+    break-inside:avoid;
+    transition:0.4s;
+}
+.couple img:hover{
+    transform:scale(1.04);
+}
+
+/* 🎵 Music */
+.music{
+    margin:70px auto;
+    max-width:380px;
+    background:rgba(255,255,255,0.28);
+    backdrop-filter:blur(12px);
+    padding:25px;
+    border-radius:30px;
+    box-shadow:0 0 30px rgba(0,120,255,0.6);
+}
+.music h2{
+    font-family:'Playfair Display', serif;
+    color:#ffffff;
+    text-shadow:0 3px 10px rgba(0,0,0,0.35);
+    margin-bottom:15px;
+}
+.music img{
+    width:100%;
+    border-radius:20px;
+    margin-bottom:15px;
+}
+
+/* 🎥 Video */
+.video{
+    margin:80px auto;
+    max-width:720px;
+    background:rgba(255,255,255,0.28);
+    backdrop-filter:blur(12px);
+    padding:28px;
+    border-radius:35px;
+    box-shadow:0 0 35px rgba(0,120,255,0.7);
+}
+.video h2{
+    font-family:'Playfair Display', serif;
+    margin-bottom:20px;
+    color:#ffffff;
+    animation:glow 2s infinite alternate;
+}
+@keyframes glow{
+    from{text-shadow:0 0 10px #ffffff;}
+    to{text-shadow:0 0 30px #00b4ff;}
+}
+video{
+    width:100%;
+    border-radius:25px;
+}
+
+/* 💕 Footer */
+footer{
+    padding:40px 20px;
+    font-size:22px;
+    color:#ffffff;
+    text-shadow:0 3px 10px rgba(0,0,0,0.35);
+}
+
+/* 📱 Responsive */
+@media(max-width:900px){
+    .couple{column-count:2;}
+}
+@media(max-width:480px){
+    .couple{column-count:1;}
+    header h1{font-size:36px;}
+    header p{font-size:18px;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>My Forever Valentine ❤️</h1>
+    <p>
+        Nee illama naan illa…<br>
+        Indha idhayam unakku mattum dhaan 💕
+    </p>
+</header>
+
+<div class="couple">
+    <img src="./media/Img/1.jpg">
+    <img src="./media/Img/2.jpg">
+    <img src="./media/Img/3.jpg">
+    <img src="./media/Img/4.jpg">
+    <img src="./media/Img/5.jpg">
+    <img src="./media/Img/6.jpg">
+</div>
+
+<div class="music">
+    <h2>Nam Kadhal Paadal 🎶</h2>
+    <img src="./media/Img/4.jpg">
+    <audio controls style="width:100%">
+        <source src="./media/audio/Vaa Vaa Penne.mp3">
+    </audio>
+</div>
+
+<div class="video">
+    <h2>En Vaazhkai-ku Nee Thaana? 💍</h2>
+    <video controls>
+        <source src="./media/Video/Romeo_Juliet_proposal_scene_what_s_app_you_M_l_c_M_c_720P.mp4">
+    </video>
+</div>
+
+<footer>
+    Un Kadhalil Oru Jenmam Pothaadhu ❤️
+</footer>
+
+<script>
+setInterval(()=>{
+    const h=document.createElement("div");
+    h.className="heart";
+    h.innerHTML="❤️";
+    h.style.left=Math.random()*100+"vw";
+    h.style.fontSize=(14+Math.random()*20)+"px";
+    document.body.appendChild(h);
+    setTimeout(()=>h.remove(),6000);
+},300);
+</script>
+
+</body>
+</html>
